@@ -7,8 +7,8 @@ import static org.junit.jupiter.api.Assertions.*;
 public class TestAddress {
     String city = "Moscow";
     String street = "Bolshaia Sadovaia";
-    int dom = 302;
-    int flat = 50;
+    int dom = 302;// да надо убрать
+    int flat = 50;// аналогично код не используется
     static int testNumber;
     static String testName= TestAddress.class.getSimpleName();
 

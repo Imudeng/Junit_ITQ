@@ -14,17 +14,19 @@ public class TestGoods {
     static void beforeAll() {
         System.out.println("Начали серию тестов: "+testName);
     }
+
     @AfterAll
     static void afterAll() {
         System.out.println("Закончили серию тестов: "+testName);
     }
+
     @BeforeEach
     public void logTestName(TestInfo testInfo) {
 
         System.out.println("Начнем тест " + testInfo.getDisplayName()+" класса "+ testName);
     }
-    @AfterEach
 
+    @AfterEach
     void afterEach() {
         testNumber++;
         System.out.println("Закончили тест №"+(testNumber));
